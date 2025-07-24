@@ -7,7 +7,7 @@ from datetime import datetime
 found_maps = []
 
 BASE_URL = "https://metrodreamin.com/view/"
-MAX_MISSES = 20
+MAX_MISSES = 40
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
 }
