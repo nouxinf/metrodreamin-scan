@@ -4,8 +4,12 @@ import time
 from bs4 import BeautifulSoup
 import re
 from datetime import datetime
-found_maps = []
+from pyfiglet import Figlet
 
+banner = Figlet(font="isometric4")
+small = Figlet(font="italic")
+
+found_maps = []
 BASE_URL = "https://metrodreamin.com/view/"
 MAX_MISSES = 40
 HEADERS = {
@@ -34,6 +38,9 @@ def check_url(encoded_id):
         return "Untitled map"
     except requests.RequestException:
         return None
+
+print(small.renderText("Metrodreamin' Account Scanner"))
+print(banner.renderText("M.A.S"))
 
 # Ask the user for input
 raw_input = input("Enter a Metrodreamin user ID or profile URL:\n> ")
